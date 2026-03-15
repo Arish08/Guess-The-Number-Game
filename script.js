@@ -12,6 +12,9 @@ document.querySelector('.check').addEventListener('click', function(){
      document.body.style.backgroundColor= "green"
      document.querySelector('.message').textContent = "Correct Answer... Play Again?"
      document.querySelector('.number').textContent = correctNumber
+     if(score>Number(document.querySelector('.highscore').textContent)){
+         document.querySelector('.highscore').textContent = score
+     }
      document.querySelector('.highscore').textContent = score
      
     }
